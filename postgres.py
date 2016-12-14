@@ -1,5 +1,7 @@
+# Opens postgres to all servers 0.0.0.0/0
 import shutil
 
+# Change numnodes variable to the value of the nodes to be installed.
 numnodes = 4
 maxconn = numnodes * 100
 
