@@ -5,7 +5,7 @@
 import os, time, sys
 
 # enter the path to the qlik sense archived logs, default: C:\ProgramData\Qlik\Sense\Repository\Archived Logs
-logpath = 'C:\\Dev\\Archived Logs'
+logpath = 'C:\\Dev\\Deltest\\ArchivedLogs'
 # enter the path of the log file to log the files deleted
 deletedfilelog = 'C:\\Dev\\deletedfiles'
 
@@ -14,10 +14,10 @@ z = time.time() - (30 * 86400)
 
 # loop through folders
 for foldername, subfolders, filenames in os.walk(logpath):
-	print foldername
+	print (foldername)
 # loop through subfolders
 	for subfolder in subfolders:
-		print foldername + '\\' + subfolder
+		print (foldername + '\\' + subfolder)
 # delete files where the creation date is less than the cutoff date
 	for filename in filenames:
 		x = os.stat(foldername +'\\'+ filename)
