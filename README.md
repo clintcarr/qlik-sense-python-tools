@@ -7,3 +7,6 @@ The Archived Logs persist indefinitely,  this script facilitates the easy deleti
 
 ### postgres.py
 A simple utility that edits postgres.conf and pg_hba.conf postgres files allowing for multi-node Qlik Sense deployments.
+
+### qrs windows authentication.py
+Example of connecting to the Qlik Repository Service API via Windows Authentication.
