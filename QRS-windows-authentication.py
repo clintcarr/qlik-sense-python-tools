@@ -1,4 +1,4 @@
-import requests
+ximport requests
 from requests_ntlm import HttpNtlmAuth
 requests.packages.urllib3.disable_warnings()
 
@@ -15,8 +15,5 @@ session = requests.Session()
 session.auth = HttpNtlmAuth('qliklocal\\administrator','Qlik1234', session)
 #connect to the API qrs/about using Windows Authentication in the session
 x = session.get('https://qs2.qliklocal.net/qrs/about?xrfkey=abcdefg123456789', verify=False, headers = headers)
-#return the URL (this is the redirect from Qlik Sense https://qs2.qliklocal.net/form/?targetid{}
-url = x.url
-y = session.get(url, verify=False, headers = headers)
 
-print (y.content)
+print (x.content)
