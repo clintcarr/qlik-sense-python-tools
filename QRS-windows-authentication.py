@@ -1,4 +1,4 @@
-ximport requests
+import requests
 from requests_ntlm import HttpNtlmAuth
 requests.packages.urllib3.disable_warnings()
 
